@@ -185,7 +185,7 @@ body.page-loaded .preloader svg path {
   left: 0;
   top: 0;
   z-index: 0;
-  fill: #000F23;
+  fill: #6789b5;
 }
 .preloader svg path {
   animation-duration: 0.8s;
@@ -227,7 +227,7 @@ body.page-loaded .preloader svg path {
   right: 0;
   top: 0;
   z-index: 1;
-  background: #ffa400;
+  background: #77a1a0;
 }
 
 /* PAGE TRANSITION */

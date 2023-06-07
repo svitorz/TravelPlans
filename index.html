@@ -19,8 +19,44 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <!-- offcanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="bag" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">What to bring?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="font-italic">
+                    For a summer trip to the United States, check the airline restrictions and bring travel documents, lightweight and comfortable clothes, swimwear, suitable
+                    footwear, accessories like sunglasses and hats, sunscreen, personal hygiene items, electronics with adapters, medications, cash, and cards. 
+                    Adjust the list according to your specific needs and destination. In case of colder weather upon arrival in the United States, we will bring winter 
+                    clothing as a precaution, such as sweaters, sweatpants, and hats.             
+                </div>
+            </div>
+          </div>
+        <!-- end offcanvas -->
+        <!-- offcanvas -->
+          <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="map" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">What to bring?</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div class="font-italic">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d13737591.157054488!2d-88.42574443259137!3d32.794802230979464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C%20Fl%C3%B3rida%2C%20EUA!3m2!1d28.5383832!2d-81.3789269!4m5!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!3m2!1d25.7616798!2d-80.1917902!4m5!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20York%2C%20NY%2C%20EUA!3m2!1d40.7127753!2d-74.0059728!4m5!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20Nova%20Iorque%2C%20NY%2C%20EUA!3m2!1d40.6781784!2d-73.9441579!4m5!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20D.C.%2C%20Distrito%20de%20Columbia%2C%20EUA!3m2!1d38.9071923!2d-77.0368707!4m5!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA%2C%20EUA!3m2!1d40.440624799999995!2d-79.9958864!4m5!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!3m2!1d25.7616798!2d-80.1917902!5e0!3m2!1spt-BR!2sbr!4v1686150400678!5m2!1spt-BR!2sbr"
+                    width="100%"
+                    height="750"
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>             
+                </div>
+            </div>
+          </div>
+        <!-- end offcanvas -->
         <!-- PreLoader -->
-        <div class="preloader">
+         <div class="preloader">
             <div class="inner">
               <figure>
                 <img src="assets/img/pngegg.png" alt="Image">
@@ -52,7 +88,9 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About the travel</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Plans of the travel</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Day to Day</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" href="#bag" role="button" aria-controls="offcanvasExample">What to bring?</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" href="#map" role="button" aria-controls="offcanvasExample">Way</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">About us</a></li>
                     </ul>
                 </div>
@@ -64,18 +102,18 @@
                 <div class="d-flex justify-content-center">
                     <div class="text-center">
                         <h1 class="mx-auto my-0 text-uppercase">USA</h1>
-                        <h2 class="text-white-50 mx-auto mt-2 mb-5">Período de viagem: 14 dias.</h2>
+                        <h2 class="text-white-50 mx-auto mt-2 mb-5">14 days.</h2>
                         <a class="btn btn-primary" href="#about">Start the tour!</a>
                     </div>
                 </div>
             </div>
         </header>
         <!-- About-->
-        <section class="about-section text-center" id="about">
-            <div class="container px-4 px-lg-5">
+        <section class="about-section text-center">
+            <div class="container px-5 py-5 px-lg-5" id="about">
                 <div class="row gx-3 gx-lg-4 justify-content-center">
                     <div class="col-lg-8">
-                        <h2 class="text-white mb-2">Informações básicas.</h2>
+                        <h2 class="text-white mb-2">Básic information.</h2>
                         <p class="text-white-50 text-justify">
                             Departure by plane from Votuporanga to São Paulo at 9:00 PM on July 1st.
                             Departure by plane from São Paulo to Orlando, USA at 6:00 AM on July 2nd.
@@ -84,7 +122,7 @@
                             The current season at the destination is summer. The expected climate is hot and humid with an average temperature of 28°C.
 
                         </p>
-                        <img class="img-fluid" src="assets/img/pngegg.png" alt="..." />
+                      <img class="img-fluid" src="assets/img/pngegg.png" alt="..."/> 
                     </div>
                 </div>
             </div>
