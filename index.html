@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
+        <meta name="Trabalho de inglês de planos de viagem" content="" />
+        <meta name="Vitor Fábio" content="" />
         <title>TRAVEL PLAN</title>
-        <!-- link jquery -->
-        <!-- JQUERY -->
+        <!-- LINK JQUERY -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- Ícone da página -->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
+        <!-- Font Awesome icons -->
         <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
@@ -19,26 +19,10 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
-        <!-- offcanvas -->
-          <div class="offcanvas offcanvas-start" tabindex="-1" id="bag" aria-labelledby="offcanvasExampleLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">What to bring?</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body">
-              <div class="font-italic">
-                    For a summer trip to the United States, check the airline restrictions and bring travel documents, lightweight and comfortable clothes, swimwear, suitable
-                    footwear, accessories like sunglasses and hats, sunscreen, personal hygiene items, electronics with adapters, medications, cash, and cards. 
-                    Adjust the list according to your specific needs and destination. In case of colder weather upon arrival in the United States, we will bring winter 
-                    clothing as a precaution, such as sweaters, sweatpants, and hats.             
-                </div>
-            </div>
-          </div>
-        <!-- end offcanvas -->
-        <!-- offcanvas -->
+        <!-- Mapa da viagem com link direto do google. -->
           <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="map" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">What to bring?</h5>
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">...</h5>
               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -55,29 +39,26 @@
             </div>
           </div>
         <!-- end offcanvas -->
-        <!-- PreLoader -->
-         <div class="preloader">
-            <div class="inner">
-              <figure>
-                <img src="assets/img/pngegg.png" alt="Image">
-              </figure>
-              <div class="percentage" id="percentage">0</div>
+
+        <!-- tela de preloading (pré-carregamento) --> 
+            <div class="preloader">
+                <div class="inner">
+                <figure>
+                    <img src="assets/img/pngegg.png" alt="Image">
+                </figure>
+                <div class="percentage" id="percentage">0</div>
+                </div>
+                <div class="loader-progress" id="loader-progress"></div>
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+                <path d="M-4.5,1080H1920V0H0c-10.2,134.8,0.1,311.5,0,541C-0.1,769.5,0,948-4.5,1080z"></path>
+                </svg>
             </div>
-            <!-- end inner -->
-            <div class="loader-progress" id="loader-progress"></div>
-            <!-- end loader-progress -->
-            <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-              <path d="M-4.5,1080H1920V0H0c-10.2,134.8,0.1,311.5,0,541C-0.1,769.5,0,948-4.5,1080z"></path>
-            </svg>
-          </div>
-          <!-- end preloader -->
-          <div class="page-transition">
-            <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-              <path d="M540,1080H0V0h540c-40.28,124.78-85.13,311.48-85,541C455.13,769.53,499.81,955.48,540,1080z"></path>
-            </svg>
-          </div>
-          <!-- end page-transition -->
-        <!-- Navigation-->
+            <div class="page-transition">
+                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+                <path d="M540,1080H0V0h540c-40.28,124.78-85.13,311.48-85,541C455.13,769.53,499.81,955.48,540,1080z"></path>
+                </svg>  
+          </div> 
+          <!-- Fim do pré-carregamento-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">Travel Plan</a>
@@ -88,15 +69,16 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About the travel</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#what-to-bring">What to bring?</a></li>
                         <li class="nav-item"><a class="nav-link" href="#projects">Day to Day</a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" href="#bag" role="button" aria-controls="offcanvasExample">What to bring?</a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" href="#map" role="button" aria-controls="offcanvasExample">Way</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" href="#map" role="button" aria-controls="offcanvasExample">Road</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">About us</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- Masthead-->
+        <!-- fim da barra de navegação -->
+        <!-- Masthead - cabeçalho grande-->
         <header class="masthead">
             <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
                 <div class="d-flex justify-content-center">
@@ -108,7 +90,7 @@
                 </div>
             </div>
         </header>
-        <!-- About-->
+        <!-- texto de informações básicas sobre a viagem-->
         <section class="about-section text-center">
             <div class="container px-5 py-5 px-lg-5" id="about">
                 <div class="row gx-3 gx-lg-4 justify-content-center">
@@ -120,19 +102,32 @@
                             Expected arrival in Orlando, USA at 6:00 PM on July 2nd.
                             The duration of the trip is 14 days.
                             The current season at the destination is summer. The expected climate is hot and humid with an average temperature of 28°C.
-
                         </p>
                       <img class="img-fluid" src="assets/img/pngegg.png" alt="..."/> 
                     </div>
                 </div>
             </div>
         </section>
+        <section class="gradiente py-5" id="what-to-bring">
+            <div class="container px-5 py-5 px-lg-5">
+                <div class="row gx-3 py-4  gx-lg-4 justify-content-center">
+                    <div class="col-lg-8">
+                <h2 class="text-white mb-3 text-center">What to bring?</h2>
+                    <p class="text-dark-50 text-justify pb-4 fs-5">
+                    For a summer trip to the United States, check the airline restrictions and bring travel documents, lightweight and comfortable clothes, swimwear, suitable footwear, 
+                    accessories like sunglasses and hats, sunscreen, personal hygiene items, electronics with adapters, medications, cash, and cards. Adjust the list according to your specific needs 
+                    and destination. In case of colder weather upon arrival in the United States, we will bring winter clothing as a precaution, such as sweaters, sweatpants, and hats.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- Projects-->
-        <section class="projects-section bg-light" id="projects">
+        <section class="projects-section bg-light">
             <div class="container px-4 px-lg-5">
-                <!-- Featured Project Row-->
+                <!-- Dia-dia da viagem:dia 1-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/orlando-lago-lucerna.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7" id="projects"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/orlando-lago-lucerna.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Day 1:</h4>
@@ -142,8 +137,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project One Row-->
-                <!-- Featured Project Row-->
+                <!-- dia 2 -->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
@@ -155,7 +149,7 @@
                     </div>
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/pexels-caroline-cagnin-1860618.jpg" alt="" /></div>
                 </div>
-                <!-- Featured Project Row-->
+                <!--dia 3-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/baleia.jpg" alt="Apresentação de baleias na Disney"/></div>
                     <div class="col-xl-4 col-lg-5">
@@ -167,7 +161,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Featured Project Row-->
+                <!--dia 4-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
@@ -178,7 +172,7 @@
                     </div>
                     <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/look-from-skyscrapers-standing-sea-bays.jpg" alt="Arranhas-céus e a praia de Miami" /></div>
                 </div>   
-                <!-- Project One Row-->
+                <!--dia 5-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/santa-monica-pier-beach-los-angeles.jpg" alt="Por do sol nas praias de miami, no pier de Santa Mônica" /></div>
                     <div class="col-lg-6">
@@ -194,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+                <!--  dia 6 -->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/miami-south-beach-sunrise.jpg" alt="pôr do sol nas praias de Miami" /></div>
                     <div class="col-lg-6 order-lg-first">
@@ -212,7 +206,7 @@
                 </div>
             </div>  
             <div class="container px-4 px-lg-5">
-                <!-- Project One Row-->
+                <!-- dia 7 -->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/central-park-manhattan-new-york-huge-beautiful-park-surrounded-by-skyscraper-with-pond.jpg" alt="Imagem do Central Park em Nova York" /></div>
                     <div class="col-lg-6">
@@ -228,7 +222,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+                <!-- dia 8 -->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/estatua-da-liberdade-e-o-horizonte-da-cidade-de-nova-york-eua.jpg" alt="Imagem da estatua da liberdade em nova york" /></div>
                     <div class="col-lg-6 order-lg-first">
@@ -246,7 +240,7 @@
                 </div>
             </div>
             <div class="container px-4 px-lg-5">
-                <!-- Project One Row-->
+                <!--  dia 9 -->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/brooklyn-bridge.jpg" alt="Imagem da ponte do Brooklyn" /></div>
                     <div class="col-lg-6">
@@ -262,7 +256,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+                <!--dia 10  -->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/thomas-jefferson-memorial-surrounded-by-lake-trees-sunlight-washington-dc.jpg" alt="Casa Branca em Washngton DC" /></div>
                     <div class="col-lg-6 order-lg-first">
@@ -280,7 +274,7 @@
                 </div>
             </div>
             <div class="container px-4 px-lg-5">
-                <!-- Project One Row-->
+                <!-- dia 11 -->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/wallpaperflare.com_wallpaper.jpg" alt="Imagem de Pittsburgh no estado da Pensylvania" /></div>
                     <div class="col-lg-6">
@@ -296,7 +290,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+                <!--  dia 12-->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/miami-south-beach-sunrise.jpg" alt="Por do sol na praia de Miami" /></div>
                     <div class="col-lg-6 order-lg-first">
@@ -313,6 +307,7 @@
                     </div>
                 </div>
             </div>
+            <!--  dia 13 -->
             <div class="container px-4 px-lg-5">
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/skyscrapers-sunset.jpg" alt="imagem de um por do sol nos prédios da cidade de são paulo" /></div>
@@ -329,7 +324,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Project Two Row-->
+                <!-- dia 14 -->
                 <div class="row gx-0 justify-content-center">
                     <div class="col-lg-6"><img class="img-fluid" src="assets/img/Votuporanga_(SP)_-_Áerea_-_Centro_da_Cidade.jpg" alt="Centro de Votuporanga interior do estado de São Paulo" /></div>
                     <div class="col-lg-6 order-lg-first">
@@ -347,7 +342,7 @@
             </div>
         </div>
         </section>
-        <!-- Signup-->
+        <!-- Finalização e agradecimentos -->
         <section class="signup-section" id="signup">
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5">
@@ -356,7 +351,7 @@
                         <h2 class="text-white mb-1">Obrigado pela atenção!</h2>
             </div>
         </section>
-        <!-- Contact-->
+        <!-- sobre nós -->
         <section class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
                 <h5 class="text-white mb-5">Realizado por:</h5>
@@ -389,21 +384,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="social d-flex justify-content-center">
-                    <a class="mx-2" href="https://github.com/svitorz/svitorz.github.io"><i class="fab fa-github"></i></a>
-                </div>
             </div>
         </section>
         <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Criado e mantido por alunos do segundo informática. Acesse nosso repositório em <a href="https://github.com/svitorz/svitorz.github.io" target="_blank" rel="noopener noreferrer">Github</a>. </div> </footer>
         <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; João, Renan, Vitor 2023</div></footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     </body>
 </html>

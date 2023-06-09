@@ -266,6 +266,12 @@ body.page-loaded .preloader svg path {
   animation-timing-function: cubic-bezier(0.785, 0.135, 0.15, 0.86);
 }
 /* END PRELOADER */
+/* Gradiente background */
+.gradiente {
+  background: rgb(51,51,51);
+  background: linear-gradient(180deg, rgba(51,51,51,1) 0%, rgba(255,255,255,1) 100%);
+}
+
 hr {
   margin: 1rem 0;
   color: inherit;

@@ -7,7 +7,8 @@
 // Scripts
 // 
 
-// PRELOADER
+// PRELOADE
+
 (function ($) {
     var counting = setInterval(function () {
         var loader = document.getElementById("percentage");
@@ -23,7 +24,6 @@
         loadscreen.style.width = Width + "%";
       }, 10);
     })(jQuery);
-    
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
