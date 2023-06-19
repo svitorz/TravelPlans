@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="Trabalho de inglês de planos de viagem" content="" />
-        <meta name="Vitor Fábio" content="" />
-        <title>TRAVEL PLAN</title>
-        <!-- LINK JQUERY -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!-- Ícone da página -->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Font Awesome icons -->
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="Trabalho de inglês de planos de viagem" content="" />
+    <meta name="Vitor Fábio" content="" />
+    <title>TRAVEL PLAN</title>
+    <!-- LINK JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Ícone da página -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <div data-spy="scroll" data-bs-target="#mainNav" data-offset="0">
         <!-- Mapa da viagem com link direto do google. -->
-          <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="map" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas offcanvas-start w-100" tabindex="-1" id="map" aria-labelledby="offcanvasExampleLabel">
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasExampleLabel">...</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">...</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-              <div class="font-italic">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d13737591.157054488!2d-88.42574443259137!3d32.794802230979464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C%20Fl%C3%B3rida%2C%20EUA!3m2!1d28.5383832!2d-81.3789269!4m5!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!3m2!1d25.7616798!2d-80.1917902!4m5!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20York%2C%20NY%2C%20EUA!3m2!1d40.7127753!2d-74.0059728!4m5!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20Nova%20Iorque%2C%20NY%2C%20EUA!3m2!1d40.6781784!2d-73.9441579!4m5!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20D.C.%2C%20Distrito%20de%20Columbia%2C%20EUA!3m2!1d38.9071923!2d-77.0368707!4m5!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA%2C%20EUA!3m2!1d40.440624799999995!2d-79.9958864!4m5!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!3m2!1d25.7616798!2d-80.1917902!5e0!3m2!1spt-BR!2sbr!4v1686150400678!5m2!1spt-BR!2sbr"
-                    width="100%"
-                    height="750"
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>             
+                <div class="font-italic">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m58!1m12!1m3!1d13737591.157054488!2d-88.42574443259137!3d32.794802230979464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m43!3e0!4m5!1s0x88e773d8fecdbc77%3A0xac3b2063ca5bf9e!2sOrlando%2C%20Fl%C3%B3rida%2C%20EUA!3m2!1d28.5383832!2d-81.3789269!4m5!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!3m2!1d25.7616798!2d-80.1917902!4m5!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNova%20York%2C%20NY%2C%20EUA!3m2!1d40.7127753!2d-74.0059728!4m5!1s0x89c24416947c2109%3A0x82765c7404007886!2sBrooklyn%2C%20Nova%20Iorque%2C%20NY%2C%20EUA!3m2!1d40.6781784!2d-73.9441579!4m5!1s0x89b7c6de5af6e45b%3A0xc2524522d4885d2a!2sWashington%2C%20D.C.%2C%20Distrito%20de%20Columbia%2C%20EUA!3m2!1d38.9071923!2d-77.0368707!4m5!1s0x8834f16f48068503%3A0x8df915a15aa21b34!2sPittsburgh%2C%20PA%2C%20EUA!3m2!1d40.440624799999995!2d-79.9958864!4m5!1s0x88d9b0a20ec8c111%3A0xff96f271ddad4f65!2zTWlhbWksIEZsw7NyaWRhLCBFVUE!3m2!1d25.7616798!2d-80.1917902!5e0!3m2!1spt-BR!2sbr!4v1686150400678!5m2!1spt-BR!2sbr"
+                        width="100%" height="750" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
             </div>
-          </div>
+        </div>
         <!-- end offcanvas -->
 
-        <!-- tela de preloading (pré-carregamento) --> 
-            <div class="preloader">
-                <div class="inner">
+        <!-- tela de preloading (pré-carregamento) -->
+        <div class="preloader">
+            <div class="inner">
                 <figure>
                     <img src="assets/img/pngegg.png" alt="Image">
                 </figure>
                 <div class="percentage" id="percentage">0</div>
-                </div>
-                <div class="loader-progress" id="loader-progress"></div>
-                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-                <path d="M-4.5,1080H1920V0H0c-10.2,134.8,0.1,311.5,0,541C-0.1,769.5,0,948-4.5,1080z"></path>
-                </svg>
             </div>
-            <div class="page-transition">
-                <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
-                <path d="M540,1080H0V0h540c-40.28,124.78-85.13,311.48-85,541C455.13,769.53,499.81,955.48,540,1080z"></path>
-                </svg>  
-          </div> 
-          <!-- Fim do pré-carregamento-->
+            <div class="loader-progress" id="loader-progress"></div>
+            <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+                <path d="M-4.5,1080H1920V0H0c-10.2,134.8,0.1,311.5,0,541C-0.1,769.5,0,948-4.5,1080z"></path>
+            </svg>
+        </div>
+        <div class="page-transition">
+            <svg viewBox="0 0 1920 1080" preserveAspectRatio="none" version="1.1">
+                <path d="M540,1080H0V0h540c-40.28,124.78-85.13,311.48-85,541C455.13,769.53,499.81,955.48,540,1080z">
+                </path>
+            </svg>
+        </div>
+        <!-- Fim do pré-carregamento-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#page-top">Travel Plan</a>
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
                 </button>
@@ -70,8 +75,9 @@
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">About the travel</a></li>
                         <li class="nav-item"><a class="nav-link" href="#what-to-bring">What to bring?</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#projects">Day to Day</a></li>
-                        <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" href="#map" role="button" aria-controls="offcanvasExample">Road</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#dayday">Day to Day</a></li>
+                        <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" href="#map" role="button"
+                                aria-controls="offcanvasExample">Road</a></li>
                         <li class="nav-item"><a class="nav-link" href="#signup">About us</a></li>
                     </ul>
                 </div>
@@ -91,8 +97,8 @@
             </div>
         </header>
         <!-- texto de informações básicas sobre a viagem-->
-        <section class="about-section text-center">
-            <div class="container px-5 py-5 px-lg-5" id="about">
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 py-4 px-lg-4">
                 <div class="row gx-3 gx-lg-4 justify-content-center">
                     <div class="col-lg-8">
                         <h2 class="text-white mb-2">Básic information.</h2>
@@ -101,22 +107,26 @@
                             Departure by plane from São Paulo to Orlando, USA at 6:00 AM on July 2nd.
                             Expected arrival in Orlando, USA at 6:00 PM on July 2nd.
                             The duration of the trip is 14 days.
-                            The current season at the destination is summer. The expected climate is hot and humid with an average temperature of 28°C.
+                            The current season at the destination is summer. The expected climate is hot and humid with
+                            an average temperature of 28°C.
                         </p>
-                      <img class="img-fluid" src="assets/img/pngegg.png" alt="..."/> 
+                        <img class="img-fluid" src="assets/img/pngegg.png" alt="..." />
                     </div>
                 </div>
             </div>
         </section>
-        <section class="gradiente py-5" id="what-to-bring">
-            <div class="container px-5 py-5 px-lg-5">
+        <section class="gradiente py-5">
+            <div class="container px-5 py-5 px-lg-5" id="what-to-bring">
                 <div class="row gx-3 py-4  gx-lg-4 justify-content-center">
                     <div class="col-lg-8">
-                <h2 class="text-white mb-3 text-center">What to bring?</h2>
-                    <p class="text-dark-50 text-justify pb-4 fs-5">
-                    For a summer trip to the United States, check the airline restrictions and bring travel documents, lightweight and comfortable clothes, swimwear, suitable footwear, 
-                    accessories like sunglasses and hats, sunscreen, personal hygiene items, electronics with adapters, medications, cash, and cards. Adjust the list according to your specific needs 
-                    and destination. In case of colder weather upon arrival in the United States, we will bring winter clothing as a precaution, such as sweaters, sweatpants, and hats.
+                        <h2 class="text-white mb-3 text-center">What to bring?</h2>
+                        <p class="text-dark-50 text-justify pb-4 fs-5">
+                            For a summer trip to the United States, check the airline restrictions and bring travel
+                            documents, lightweight and comfortable clothes, swimwear, suitable footwear,
+                            accessories like sunglasses and hats, sunscreen, personal hygiene items, electronics with
+                            adapters, medications, cash, and cards. Adjust the list according to your specific needs
+                            and destination. In case of colder weather upon arrival in the United States, we will bring
+                            winter clothing as a precaution, such as sweaters, sweatpants, and hats.
                         </p>
                     </div>
                 </div>
@@ -124,15 +134,18 @@
         </section>
         <!-- Projects-->
         <section class="projects-section bg-light">
-            <div class="container px-4 px-lg-5">
+                <span id="dayday">
+            <div class="container px-2 px-lg-3">
                 <!-- Dia-dia da viagem:dia 1-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7" id="projects"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/orlando-lago-lucerna.jpg" alt="..." /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0"
+                            src="assets/img/orlando-lago-lucerna.jpg" alt="..." /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Day 1:</h4>
                             <p class="text-black-50 mb-0">
-                                Check-in at Rosen Inn International hotel. Rent a car and explore downtown Orlando. Have dinner at STK Steakhouse. Return to the hotel.
+                                Check-in at Rosen Inn International hotel. Rent a car and explore downtown Orlando. Have
+                                dinner at STK Steakhouse. Return to the hotel.
                             </p>
                         </div>
                     </div>
@@ -143,20 +156,24 @@
                         <div class="featured-text text-center text-lg-left">
                             <h4>Day 2:</h4>
                             <p class="text-black-50 mb-0">
-                                Visit the Disney parks in Orlando and explore the park's attractions, such as the castles and roller coasters, as well as try the themed food. Return to the hotel.
+                                Visit the Disney parks in Orlando and explore the park's attractions, such as the
+                                castles and roller coasters, as well as try the themed food. Return to the hotel.
                             </p>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/pexels-caroline-cagnin-1860618.jpg" alt="" /></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0"
+                            src="assets/img/pexels-caroline-cagnin-1860618.jpg" alt="" /></div>
                 </div>
                 <!--dia 3-->
                 <div class="row gx-0 mb-4 mb-lg-5 align-items-center">
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/baleia.jpg" alt="Apresentação de baleias na Disney"/></div>
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/baleia.jpg"
+                            alt="Apresentação de baleias na Disney" /></div>
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Day 3:</h4>
                             <p class="text-black-50 mb-0">
-                                Return to the Disney park and complete the visit to the park's attractions. Later, go to the cinema and watch the main featured movie. Return to the hotel.
+                                Return to the Disney park and complete the visit to the park's attractions. Later, go to
+                                the cinema and watch the main featured movie. Return to the hotel.
                             </p>
                         </div>
                     </div>
@@ -166,22 +183,28 @@
                     <div class="col-xl-4 col-lg-5">
                         <div class="featured-text text-center text-lg-left">
                             <h4>Day 4:</h4>
-                        <p class="text-black-50 mb-0">
-                            Check-out from Rosen Inn International hotel and take a taxi to the city of Miami. Check-in at Best Western On The Bay Inn & Marina hotel. Rest from the previous day.                          </p>
+                            <p class="text-black-50 mb-0">
+                                Check-out from Rosen Inn International hotel and take a taxi to the city of Miami.
+                                Check-in at Best Western On The Bay Inn & Marina hotel. Rest from the previous day. </p>
                         </div>
                     </div>
-                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0" src="assets/img/look-from-skyscrapers-standing-sea-bays.jpg" alt="Arranhas-céus e a praia de Miami" /></div>
-                </div>   
+                    <div class="col-xl-8 col-lg-7"><img class="img-fluid mb-3 mb-lg-0"
+                            src="assets/img/look-from-skyscrapers-standing-sea-bays.jpg"
+                            alt="Arranhas-céus e a praia de Miami" /></div>
+                </div>
                 <!--dia 5-->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/santa-monica-pier-beach-los-angeles.jpg" alt="Por do sol nas praias de miami, no pier de Santa Mônica" /></div>
+                    <div class="col-lg-6"><img class="img-fluid"
+                            src="assets/img/santa-monica-pier-beach-los-angeles.jpg"
+                            alt="Por do sol nas praias de miami, no pier de Santa Mônica" /></div>
                     <div class="col-lg-6">
                         <div class="bg-dark text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Day 5:</h4>
                                     <p class="mb-0 text-white-50">
-                                    Visit the beaches of Miami, such as Miami Beach, and have lunch with portions and snacks right on the beach. Return to the hotel.
+                                        Visit the beaches of Miami, such as Miami Beach, and have lunch with portions
+                                        and snacks right on the beach. Return to the hotel.
                                     </p>
                                 </div>
                             </div>
@@ -190,32 +213,38 @@
                 </div>
                 <!--  dia 6 -->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/miami-south-beach-sunrise.jpg" alt="pôr do sol nas praias de Miami" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/miami-south-beach-sunrise.jpg"
+                            alt="pôr do sol nas praias de Miami" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-light text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-dark">Day 6:</h4>
                                     <p class="mb-0 text-dark-50">
-                                        Enjoy the Miami beaches again and have lunch at Garden House Latin Restaurant. In the late afternoon, catch the 6:00 PM flight to New York.
+                                        Enjoy the Miami beaches again and have lunch at Garden House Latin Restaurant.
+                                        In the late afternoon, catch the 6:00 PM flight to New York.
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>  
+            </div>
             <div class="container px-4 px-lg-5">
                 <!-- dia 7 -->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/central-park-manhattan-new-york-huge-beautiful-park-surrounded-by-skyscraper-with-pond.jpg" alt="Imagem do Central Park em Nova York" /></div>
+                    <div class="col-lg-6"><img class="img-fluid"
+                            src="assets/img/central-park-manhattan-new-york-huge-beautiful-park-surrounded-by-skyscraper-with-pond.jpg"
+                            alt="Imagem do Central Park em Nova York" /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Day 7:</h4>
                                     <p class="mb-0 text-white-50">
-                                        Arrive at The Central Park North hotel and check-in. Have lunch at Per Se restaurant. Visit Central Park. Have dinner at Boucherie Union Square restaurant. Return to the hotel.
+                                        Arrive at The Central Park North hotel and check-in. Have lunch at Per Se
+                                        restaurant. Visit Central Park. Have dinner at Boucherie Union Square
+                                        restaurant. Return to the hotel.
                                     </p>
                                 </div>
                             </div>
@@ -224,14 +253,17 @@
                 </div>
                 <!-- dia 8 -->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/estatua-da-liberdade-e-o-horizonte-da-cidade-de-nova-york-eua.jpg" alt="Imagem da estatua da liberdade em nova york" /></div>
+                    <div class="col-lg-6"><img class="img-fluid"
+                            src="assets/img/estatua-da-liberdade-e-o-horizonte-da-cidade-de-nova-york-eua.jpg"
+                            alt="Imagem da estatua da liberdade em nova york" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-dark text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Day 8:</h4>
                                     <p class="mb-0 text-white-50">
-                                        Visit Times Square and explore its center and surroundings. Take a helicopter tour of the Big Apple. Have dinner at Cereto's pizzeria. Return to the hotel.
+                                        Visit Times Square and explore its center and surroundings. Take a helicopter
+                                        tour of the Big Apple. Have dinner at Cereto's pizzeria. Return to the hotel.
                                     </p>
                                 </div>
                             </div>
@@ -242,14 +274,17 @@
             <div class="container px-4 px-lg-5">
                 <!--  dia 9 -->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/brooklyn-bridge.jpg" alt="Imagem da ponte do Brooklyn" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/brooklyn-bridge.jpg"
+                            alt="Imagem da ponte do Brooklyn" /></div>
                     <div class="col-lg-6">
                         <div class="bg-light text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-dark">Day 9:</h4>
                                     <p class="mb-0 text-dark-50">
-                                        Rent a car to visit Brooklyn, where the location of "Everybody Hates Chris" was filmed. Have a quick snack and explore downtown New York. Return to the hotel and have dinner there.
+                                        Rent a car to visit Brooklyn, where the location of "Everybody Hates Chris" was
+                                        filmed. Have a quick snack and explore downtown New York. Return to the hotel
+                                        and have dinner there.
                                     </p>
                                 </div>
                             </div>
@@ -258,14 +293,18 @@
                 </div>
                 <!--dia 10  -->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/thomas-jefferson-memorial-surrounded-by-lake-trees-sunlight-washington-dc.jpg" alt="Casa Branca em Washngton DC" /></div>
+                    <div class="col-lg-6"><img class="img-fluid"
+                            src="assets/img/thomas-jefferson-memorial-surrounded-by-lake-trees-sunlight-washington-dc.jpg"
+                            alt="Casa Branca em Washngton DC" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-white">Day 10:</h4>
                                     <p class="mb-0 text-white-50">
-                                        Take a flight to Washington D.C. at 10:00 AM. Check-in at DoubleTree by Hilton Hotel and have lunch there. Visit the White House in the USA. Have dinner at Old Ebbitt Grill restaurant.
+                                        Take a flight to Washington D.C. at 10:00 AM. Check-in at DoubleTree by Hilton
+                                        Hotel and have lunch there. Visit the White House in the USA. Have dinner at Old
+                                        Ebbitt Grill restaurant.
                                     </p>
                                 </div>
                             </div>
@@ -276,14 +315,16 @@
             <div class="container px-4 px-lg-5">
                 <!-- dia 11 -->
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/wallpaperflare.com_wallpaper.jpg" alt="Imagem de Pittsburgh no estado da Pensylvania" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/wallpaperflare.com_wallpaper.jpg"
+                            alt="Imagem de Pittsburgh no estado da Pensylvania" /></div>
                     <div class="col-lg-6">
                         <div class="bg-dark text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Day 11:</h4>
                                     <p class="mb-0 text-white-50">
-                                        Have lunch at the hotel. Go to Tanger Outlets Pittsburgh for clothes shopping and visit similar stores. Have dinner at McDonald's.
+                                        Have lunch at the hotel. Go to Tanger Outlets Pittsburgh for clothes shopping
+                                        and visit similar stores. Have dinner at McDonald's.
                                     </p>
                                 </div>
                             </div>
@@ -292,14 +333,17 @@
                 </div>
                 <!--  dia 12-->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/miami-south-beach-sunrise.jpg" alt="Por do sol na praia de Miami" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/miami-south-beach-sunrise.jpg"
+                            alt="Por do sol na praia de Miami" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-light text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-dark">Day 12:</h4>
                                     <p class="mb-0 text-dark-50">
-                                        Check-out from DoubleTree by Hilton Hotel and return to Miami by bus, and head back to the beaches. Stay only one night at Riu Plaza Miami Beach hotel and have fast food for dinner.
+                                        Check-out from DoubleTree by Hilton Hotel and return to Miami by bus, and head
+                                        back to the beaches. Stay only one night at Riu Plaza Miami Beach hotel and have
+                                        fast food for dinner.
                                     </p>
                                 </div>
                             </div>
@@ -310,14 +354,16 @@
             <!--  dia 13 -->
             <div class="container px-4 px-lg-5">
                 <div class="row gx-0 mb-5 mb-lg-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/skyscrapers-sunset.jpg" alt="imagem de um por do sol nos prédios da cidade de são paulo" /></div>
+                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/skyscrapers-sunset.jpg"
+                            alt="imagem de um por do sol nos prédios da cidade de são paulo" /></div>
                     <div class="col-lg-6">
                         <div class="bg-black text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Day 13:</h4>
                                     <p class="mb-0 text-white-50">
-                                        Take the flight back to Brazil at 11:00 AM. Expected arrival in São Paulo at 11:00 PM. Check-in at Hotel Millennium.
+                                        Take the flight back to Brazil at 11:00 AM. Expected arrival in São Paulo at
+                                        11:00 PM. Check-in at Hotel Millennium.
                                     </p>
                                 </div>
                             </div>
@@ -326,21 +372,24 @@
                 </div>
                 <!-- dia 14 -->
                 <div class="row gx-0 justify-content-center">
-                    <div class="col-lg-6"><img class="img-fluid" src="assets/img/Votuporanga_(SP)_-_Áerea_-_Centro_da_Cidade.jpg" alt="Centro de Votuporanga interior do estado de São Paulo" /></div>
+                    <div class="col-lg-6"><img class="img-fluid"
+                            src="assets/img/Votuporanga_(SP)_-_Áerea_-_Centro_da_Cidade.jpg"
+                            alt="Centro de Votuporanga interior do estado de São Paulo" /></div>
                     <div class="col-lg-6 order-lg-first">
                         <div class="bg-light text-center h-100 project">
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-right">
                                     <h4 class="text-dark">Day 14:</h4>
                                     <p class="mb-0 text-dark-50">
-                                        Conclusion of the trip by returning to Votuporanga on an executive bus and concluding the journey.                                    </p>
+                                        Conclusion of the trip by returning to Votuporanga on an executive bus and
+                                        concluding the journey. </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </span>
             </div>
-        </div>
         </section>
         <!-- Finalização e agradecimentos -->
         <section class="signup-section" id="signup">
@@ -348,20 +397,21 @@
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-1">Obrigado pela atenção!</h2>
+                        <h2 class="text-white mb-1">Thanks for attention!</h2>
+                    </div>
             </div>
         </section>
         <!-- sobre nós -->
         <section class="contact-section bg-black">
             <div class="container px-4 px-lg-5">
-                <h5 class="text-white mb-5">Realizado por:</h5>
+                <h5 class="text-white mb-5">Realized by:</h5>
                 <div class="row gx-4 gx-lg-5">
                     <div class="col-md-4 mb-3 mb-md-0">
                         <div class="card py-4 h-100">
-                            <div class="card-body text-center"> 
+                            <div class="card-body text-center">
                                 <h4 class="text-uppercase m-0">Vitor Fábio</h4>
-                                <hr class="my-4 mx-auto"/>
-                                <div class="small text-black-50">Programação web</div>
+                                <hr class="my-4 mx-auto" />
+                                <div class="small text-black-50">Web development</div>
                             </div>
                         </div>
                     </div>
@@ -370,7 +420,7 @@
                             <div class="card-body text-center">
                                 <h4 class="text-uppercase m-0">João Vitor</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Tradução dos textos</div>
+                                <div class="small text-black-50">Text translate</div>
                             </div>
                         </div>
                     </div>
@@ -379,7 +429,7 @@
                             <div class="card-body text-center">
                                 <h4 class="text-uppercase m-0">Renan Bomfim</h4>
                                 <hr class="my-4 mx-auto" />
-                                <div class="small text-black-50">Elaboração dos textos</div>
+                                <div class="small text-black-50">Text writing</div>
                             </div>
                         </div>
                     </div>
@@ -387,12 +437,18 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Criado e mantido por alunos do segundo informática. Acesse nosso repositório em <a href="https://github.com/svitorz/svitorz.github.io" target="_blank" rel="noopener noreferrer">Github</a>. </div> </footer>
-        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; João, Renan, Vitor 2023</div></footer>
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container px-4 px-lg-5">Created and sustained by students of computer thecnician at the second year. Access the repo in <a href="https://github.com/svitorz/svitorz.github.io" target="_blank"
+                    rel="noopener noreferrer">Github</a>. </div>
+        </footer>
+        <footer class="footer bg-black small text-center text-white-50">
+            <div class="container px-4 px-lg-5">Copyright &copy; João, Renan, Vitor 2023</div>
+        </footer>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+    </div>
+</body>
 </html>
